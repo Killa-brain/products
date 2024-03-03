@@ -9,14 +9,14 @@ import java.util.Optional;
 
 public interface ProductService {
 
-    ProductResponse findById(Long id);
-    List<ProductResponse> findAllByUserId(Long userId);
+    Product findById(Long id);
+    List<Product> findAllByUserId(Long userId);
 
-    List<ProductResponse> findAll();
+    List<Product> findAll();
 
-    ProductResponse save(ProductRequest request);
+    Product save(ProductRequest request);
 
-    ProductResponse update(Long id, ProductRequest product);
+    Product update(Long id, ProductRequest product);
 
     boolean removeById(Long id);
 }
